@@ -12,7 +12,9 @@ let package = Package(
             .library(name: "PMKAlamofire", targets: ["PMKAlamofire"])
         ],
         dependencies: [
-            .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.13.2"),
+            .package(name: "PromiseKit",
+                 url: "https://github.com/AlexMSwift/PromiseKit",
+                 .upToNextMajor(from: "6.13.4-beta.1")),
             .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.2.2")
         ],
         targets: [
